@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<script src="./scripts/script.js" defer></script>
+		<title>SampleProject</title>
+	</head>
+	<body>
+		<header>
+			Musical Store
+			<ul>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Sign In</a></li>
+				<li><a href="">Cart</a></li>
+			</ul>
+		</header>
+		<nav>
+			<ul>
+				<li>
+					Categories
+					<ul>
+						<li><a href="#percussion">Percussion instruments</a></li>
+						<li><a href="#string">String instruments</a></li>
+						<li><a href="#digital">Keyboards and Digital Pianos</a></li>
+						<li><a href="#recording">Recording equipments</a></li>
+					</ul>
+				</li>
+				<li><a href="#contact-us">Contact us</a></li>
+			</ul>
+		</nav>
+		<main>
+			<article id="musical-store">
+				<h1>Musical Store</h1>
+				<div>
+					<blockquote>
+						<p>
+							Music is an agreeable harmony for the honor of God and the
+							permissible delights of the soul.
+						</p>
+					</blockquote>
+
+					- Johann Sebastian Bach
+				</div>
+				<p>
+					The place where we help you to start your musical journey with the
+					best of instruments curated by us specially for you.
+				</p>
+			</article>
+
+			<section id="category">
+				<h2>Types of musical instruments</h2>
+				<p>
+					There are broadly three types of instruments. Below table sumarises
+					each instrument types and best age to start learning
+				</p>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Instrument Type</td>
+							<td>Description</td>
+							<td>Examples</td>
+							<td>Recommended Age</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Percussion</td>
+							<td>
+								A percussion instrument produce sound by being struck or scraped
+								by a beater.
+							</td>
+							<td>Drums, tabla, cymbals</td>
+							<td>5 years</td>
+						</tr>
+						<tr>
+							<td>String</td>
+							<td>
+								String instruments produce sound from vibrating strings when a
+								performer plays the strings in some manner.
+							</td>
+							<td>Guitar, violin,ukulele</td>
+							<td>7 years</td>
+						</tr>
+						<tr>
+							<td>Digital</td>
+							<td>
+								An electronic instrument is any musical instrument that produces
+								or modifies sounds by electric, and usually electronic, means.
+							</td>
+							<td>Digital pianos, keyboard, midi instruments</td>
+							<td>9 years</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="3">
+								Best age to start learning any musical instrument
+							</td>
+							<td>10 years</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+
+			<section id="customized-offering">
+				<h2>Finding the compatible instruments for you</h2>
+				<p>
+					Every person is unique. Hence the need for
+					<em>personalised</em> instruments. We at Musical Store, take utmost
+					care in curating the instruments for you. But for this, we would like
+					to know you better.
+				</p>
+
+				<p>
+					Hence please fill in the details below, which will help us to find the
+					instruments which are a better fit for you. We will guarantee you that
+					you will get perfect muscial instruments especially
+					<strong>customized</strong> for you.
+					<small>Conditions apply</small>
+				</p>
+
+				<form action="#">
+					<p>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" required />
+					</p>
+					<p>
+						<label for="age">Age</label>
+						<input type="number" name="age" id="age" required />
+					</p>
+					<p>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" required />
+					</p>
+					<p>
+						<label for="select-instrument">Instrument Type</label>
+						<select name="instrumentType" id="select-instrument">
+							<option value="percussion">Percussion</option>
+							<option value="string">String</option>
+							<option value="digital">Digital</option>
+						</select>
+					</p>
+					<p>
+						<label for="comment">Comment</label>
+						<textarea name="comment" id="comment" rows="3"></textarea>
+					</p>
+					<fieldset>
+						<legend>Best time to contact</legend>
+						<p>
+							<label for="time1">Morning</label>
+							<input
+								type="radio"
+								name="contactTime"
+								id="time1"
+								value="morning"
+							/>
+						</p>
+						<p>
+							<label for="time2">Afternoon</label>
+							<input
+								type="radio"
+								name="contactTime"
+								id="time2"
+								value="afternoon"
+							/>
+						</p>
+						<p>
+							<label for="time3">Evening</label>
+							<input
+								type="radio"
+								name="contactTime"
+								id="time3"
+								value="evening"
+							/>
+						</p>
+						<label for="asap">ASAP</label>
+						<input type="checkbox" name="asap" id="asap" />
+					</fieldset>
+
+					<button type="submit">Send</button>
+				</form>
+			</section>
+
+			<section id="online-store">
+				<h2>Available musical instruments to buy in each category</h2>
+				<p>
+					Please do not hesistate to check out the below instruments. We have
+					put a lot of effort to filter the best of the instruments available in
+					the world, especially for you.
+				</p>
+
+				<section id="percussion">
+					<h3>Percussion instruments</h3>
+					<img src="#" alt="percussion instruments - tabla" />
+					<div>List of cards showing percussion instruments</div>
+				</section>
+				<section id="string">
+					<h3>String instruments</h3>
+					<img src="#" alt="string instruments - guitar" />
+					<div>List of cards showing string instruments</div>
+				</section>
+				<section id="digital">
+					<h3>Digital instruments</h3>
+					<img src="#" alt="Digital instruments - keyboard" />
+					<div>List of cards showing digital instruments</div>
+				</section>
+				<section id="recording">
+					<h3>Recording equipments</h3>
+					<img src="#" alt="recording equipments - condensor mic" />
+					<div>List of cards showing recording equipments</div>
+				</section>
+			</section>
+
+			<section id="music-certificate-exam">
+				<h2>Trinity music certificate exams</h2>
+				<p>
+					We also provide coaching on below grades of the prestigious Trinity
+					music cerificate exams
+				</p>
+				<ol>
+					<li>Foundation</li>
+					<li>Intermediate</li>
+					<li>Advanced</li>
+				</ol>
+			</section>
+
+			<article>
+				<p>
+					It seems we were not able to quench your curosity. Please check out
+					the
+					<a href="#blog">blog</a> by our professionals.
+				</p>
+			</article>
+
+			<section id="testimonials">
+				<h2>Testimonials</h2>
+				<blockquote>
+					<p>The best store I found for guitars!</p>
+				</blockquote>
+				<blockquote>
+					<p>The services offered are outstanding!</p>
+				</blockquote>
+				<blockquote>
+					<p>Musical Store made my transition to keyboard joyful.</p>
+				</blockquote>
+			</section>
+		</main>
+		<footer>
+			&copy; Musical Store
+			<section id="contact-us">
+				<h3>Contact us</h3>
+				<address>
+					2nd Cross, Kaveri Nagar,<br />
+					Bengaluru, Karnatka - 560017
+				</address>
+			</section>
+			<section id="sponsers">
+				<h3>Sponser list</h3>
+				<dl>
+					<dt>Platinum Sponser</dt>
+					<dd><a href="https://bajaao.com">Bajaao.com</a></dd>
+					<dt>Gold Sponsers</dt>
+					<dd><a href="https://casio.com" target="_blank">Casio</a></dd>
+					<dd>
+						<a
+							href="https://www.kawai-global.com/product/c/digitalpianos/"
+							target="_blank"
+							>Kawai</a
+						>
+					</dd>
+					<dt>Silver Sponsers</dt>
+					<dd><a href="https://yamaha.com" target="_blank">Yamaha</a></dd>
+					<dd><a href="https://oneodio.com" target="_blank">OneOdio</a></dd>
+					<dd>
+						<a
+							href="https://sennheiser.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Sennheiser</a
+						>
+					</dd>
+				</dl>
+			</section>
+		</footer>
+	</body>
+</html>
